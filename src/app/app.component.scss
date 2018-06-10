@@ -1,17 +1,32 @@
+@import "../styles-variables.scss";
+
 
 header {
-    background-color: #4a148c;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    color: #ffffff;
+    position: fixed;
+    left: 0;
+    right: 0;
 
-    h5{
-        height: inherit;
-        line-height: inherit;
+    .header-inner{
+        background-color: $primary-color;
+        height: 60px;
+        line-height: 60px;
+        color: #ffffff;
+        position: relative;
 
-        i{
-            margin-right: 5px;
+        .menu-button{
+            position: absolute;
+            left: 15px;
+            cursor: pointer;
+        }
+    
+        h5{ 
+            text-align: center;
+            height: inherit;
+            line-height: inherit;
+    
+            i{
+                margin-right: 5px;
+            }
         }
     }
 }
